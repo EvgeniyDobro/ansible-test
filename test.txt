@@ -1,0 +1,6 @@
+ansible all -i inventory.ini -u admin -a 'uptime' // аптайм
+
+-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-
+ssh admin@158.160.12.62
+
+ansible-playbook playbook.yml -i inventory.ini

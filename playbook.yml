@@ -1,0 +1,9 @@
+- hosts: webservers
+
+  tasks:
+    - name: install node js
+      ansible.builtin.apt:
+        name: nodejs
+        state: present
+        update_cache: yes
+      become: yes # <---

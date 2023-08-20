@@ -1,0 +1,9 @@
+- hosts: webservers
+
+  tasks:
+    - name: remove node js
+      ansible.builtin.apt:
+        name: nodejs
+        state: absent
+        update_cache: yes
+      become: yes # <---
